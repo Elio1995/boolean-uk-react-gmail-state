@@ -17,6 +17,7 @@ function App() {
 
   const [emails, setEmails] = useState([...initialEmails])
 
+
   const toggleRead = email => {
     setEmails(
       emails.map(updatedThing => {
@@ -40,22 +41,8 @@ function App() {
       })
     )
   }
-  // return emails.map(function (email) {
-  //   if (email.read === currentEmails) {
-  //     return { ...email, read: updatedEmails }
-  //   }
-  //   else {
-  //     return email
-  //   }
-  // })
 
 
-  // if (email.target.checked === true) {
-  //   setEmails({ read: false })
-  // } else if (email.target.checked === false) {
-  //   setEmails({ read: true })
-  // }
-  // setEmails(updatedEmails)
 
 
   return (
