@@ -1,6 +1,17 @@
+import { useState } from 'react'
+import App from '../App'
+import emails from '../data/emails'
 import './Header.css'
 
 function Header() {
+
+  const [search, setSearch] = useState("")
+
+  function searchFunct() {
+  }
+
+
+
   return (
     <header className="header">
       <div className="left-menu">
@@ -15,7 +26,9 @@ function Header() {
       </div>
 
       <div className="search">
-        <input className="search-bar" placeholder="Search mail" />
+        <input className="search-bar" placeholder="Search mail"
+          type="search"
+          onChange={() => { }} />
       </div>
     </header>
   )
